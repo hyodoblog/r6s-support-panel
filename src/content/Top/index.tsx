@@ -4,7 +4,7 @@ import { R6SCard } from '~/components/R6SCard'
 import { teams } from '~/data/team'
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: '#1A2027',
+  backgroundColor: theme.palette.secondary.main,
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: 'center',

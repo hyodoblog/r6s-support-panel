@@ -1,41 +1,41 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme } from '@mui/material/styles'
 
 export const themeColor = {
-  primary: "#9f0000",
-  secondary: "#777779",
-  background: "#000000",
-  card: "#1C1C1E",
-  navi: "#37373A",
-  error: "#EB4E3F",
-};
+  primary: '#9f0000',
+  secondary: '#1A2027',
+  background: '#000000',
+  card: '#1C1C1E',
+  navi: '#37373A',
+  error: '#EB4E3F'
+}
 
 export const theme = createTheme({
   spacing: 4,
   palette: {
-    mode: "dark",
+    mode: 'dark',
     primary: {
-      main: themeColor.primary,
+      main: themeColor.primary
     },
     secondary: {
-      main: themeColor.secondary,
+      main: themeColor.secondary
     },
     info: {
-      main: themeColor.card,
+      main: themeColor.card
     },
     error: {
-      main: themeColor.error,
-    },
+      main: themeColor.error
+    }
   },
   typography: {
-    fontFamily: "Noto Sans JP, Poppins",
+    fontFamily: 'Noto Sans JP, Poppins'
   },
   components: {
     MuiOutlinedInput: {
       styleOverrides: {
         root: {
-          borderRadius: 12,
-        },
-      },
+          borderRadius: 12
+        }
+      }
     },
     MuiTextField: {
       styleOverrides: {
@@ -43,17 +43,17 @@ export const theme = createTheme({
           marginTop: 6,
           marginBottom: 10,
           borderColor: themeColor.background,
-          width: "100%",
-          "& .MuiInputBase-root": {
+          width: '100%',
+          '& .MuiInputBase-root': {
             backgroundColor: themeColor.secondary,
-            borderRadius: 12,
+            borderRadius: 12
           },
-          "& .MuiFormHelperText-root": {
+          '& .MuiFormHelperText-root': {
             backgroundColor: themeColor.card,
-            fontWeight: "bold",
-          },
-        },
-      },
-    },
-  },
-});
+            fontWeight: 'bold'
+          }
+        }
+      }
+    }
+  }
+})
