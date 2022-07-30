@@ -1,4 +1,4 @@
-import { Box, Grid } from '@mui/material'
+import { Grid } from '@mui/material'
 
 import type { Team } from '~/data/team'
 import { getImgPathByPath } from '~/data/team'
