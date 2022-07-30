@@ -5,12 +5,24 @@ export interface Team {
 
 export const teams: Team[] = [
   {
-    title: 'Crest Gaming Lst',
-    path: 'CGL'
-  },
-  {
     title: 'CAG',
     path: 'CAG'
+  },
+  {
+    title: 'KAWASAKI SCARZ',
+    path: 'SCARZ'
+  },
+  {
+    title: 'REJECT',
+    path: 'REJECT'
+  },
+  {
+    title: 'NORTHEPTION',
+    path: 'NT'
+  },
+  {
+    title: 'Crest Gaming Lst',
+    path: 'CGL'
   },
   {
     title: 'FAV gaming',
@@ -20,18 +32,10 @@ export const teams: Team[] = [
     title: 'FNATIC',
     path: 'FNATIC'
   },
-  {
-    title: 'KAWASAKI SCARZ',
-    path: 'SCARZ'
-  },
   // {
   //   title: 'PSG Esports',
   //   path: 'PSG'
   // },
-  {
-    title: 'REJECT',
-    path: 'REJECT'
-  },
   // {
   //   title: 'Sengoku Gaming',
   //   path: 'SG'
@@ -39,10 +43,6 @@ export const teams: Team[] = [
   {
     title: '父の背中',
     path: 'FB'
-  },
-  {
-    title: 'NORTHEPTION',
-    path: 'NT'
   }
 ]
 
