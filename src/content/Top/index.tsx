@@ -1,4 +1,5 @@
-import { Grid, styled, Paper } from '@mui/material'
+import { Grid, Paper,styled } from '@mui/material'
+
 import { R6SCard } from '~/components/R6SCard'
 import { teams } from '~/data/team'
 

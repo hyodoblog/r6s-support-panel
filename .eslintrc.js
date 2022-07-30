@@ -8,10 +8,7 @@ module.exports = {
   rules: {
     curly: 'error',
     'no-console': ['error', { allow: ['warn', 'info', 'error'] }],
-    'no-restricted-syntax': [
-      'error',
-      { selector: 'TSEnumDeclaration', message: "Don't declare enums" },
-    ],
+    'no-restricted-syntax': ['error', { selector: 'TSEnumDeclaration', message: "Don't declare enums" }],
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
     // 'arrow-body-style': ['error', 'as-needed', { requireReturnForObjectLiteral: true }],
@@ -26,10 +23,14 @@ module.exports = {
         eventHandlerPrefix: 'handle',
         eventHandlerPropPrefix: 'on',
         checkLocalVariables: false,
-        checkInlineFunction: true,
-      },
+        checkInlineFunction: true
+      }
     ],
     'react/destructuring-assignment': ['error', 'always'],
+
+    // next
+    '@next/next/no-img-element': 'off',
+    'jsx-a11y/alt-text': 'off',
 
     // sort
     // 'import/newline-after-import': 'error',
@@ -46,15 +47,12 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/consistent-type-imports': ['warn', { prefer: 'type-imports' }],
-    '@typescript-eslint/no-unused-vars': [
-      'error',
-      { varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
-    ],
+    '@typescript-eslint/no-unused-vars': ['error', { varsIgnorePattern: '^_', argsIgnorePattern: '^_' }],
     '@typescript-eslint/naming-convention': [
       'error',
       {
         selector: ['typeAlias', 'typeParameter'],
-        format: ['PascalCase', 'UPPER_CASE'],
+        format: ['PascalCase', 'UPPER_CASE']
       },
       { selector: ['method'], format: ['camelCase', 'PascalCase'] },
       {
@@ -62,8 +60,8 @@ module.exports = {
         types: ['boolean'],
         format: ['PascalCase'],
         prefix: ['no', 'is', 'has', 'should'],
-        filter: { regex: '^_', match: false },
-      },
+        filter: { regex: '^_', match: false }
+      }
     ],
 
     // jsx-a11y
@@ -73,9 +71,9 @@ module.exports = {
       {
         components: ['Link'],
         specialLink: ['hrefLeft', 'hrefRight'],
-        aspects: ['invalidHref', 'preferButton'],
-      },
-    ],
+        aspects: ['invalidHref', 'preferButton']
+      }
+    ]
   },
   overrides: [
     {
@@ -85,9 +83,9 @@ module.exports = {
         'pages/**/*.ts',
         'src/createEmotionCache.ts',
         'src/theme/base.ts',
-        'next.config.mjs',
+        'next.config.mjs'
       ],
-      rules: { 'import/no-default-export': 'off' },
+      rules: { 'import/no-default-export': 'off' }
     },
     {
       files: ['pages/**/*.tsx', 'pages/**/*.ts', 'next.config.js', 'src/type/**/*.d.ts'],
@@ -100,14 +98,14 @@ module.exports = {
             selector: 'variable',
             types: ['boolean'],
             format: ['PascalCase'],
-            prefix: ['is', 'has', 'should'],
-          },
-        ],
-      },
+            prefix: ['is', 'has', 'should']
+          }
+        ]
+      }
     },
     {
       files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
-      extends: ['plugin:testing-library/react'],
-    },
-  ],
+      extends: ['plugin:testing-library/react']
+    }
+  ]
 }

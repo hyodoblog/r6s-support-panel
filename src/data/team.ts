@@ -46,6 +46,6 @@ export const teams: Team[] = [
   // }
 ]
 
-export const getTeamByPath = (path: string): Team => {
+export const getTeamByPath = (path: string): Team | undefined => {
   return teams.filter((team) => team.path === path)[0]
 }
