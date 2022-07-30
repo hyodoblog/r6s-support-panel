@@ -1,5 +1,5 @@
-import type { NextPage } from "next";
-import Head from "next/head";
+import type { NextPage } from 'next'
+import Head from 'next/head'
 
 const TopPage: NextPage = () => {
   return (
@@ -8,7 +8,7 @@ const TopPage: NextPage = () => {
         <title>トップ</title>
       </Head>
     </>
-  );
-};
+  )
+}
 
-export default TopPage;
+export default TopPage
