@@ -12,10 +12,6 @@ export const teams: Team[] = [
     title: 'CYCLOPS athlete gaming OSAKA',
     path: 'CAG'
   },
-  // {
-  //   title: 'DONUTS USG',
-  //   path: 'USG'
-  // },
   {
     title: 'FAV gaming',
     path: 'FAV'
@@ -24,10 +20,6 @@ export const teams: Team[] = [
     title: 'FNATIC',
     path: 'FNATIC'
   },
-  // {
-  //   title: 'IGZIST',
-  //   path: 'IGZIST'
-  // },
   {
     title: 'KAWASAKI SCARZ',
     path: 'SCARZ'
@@ -39,11 +31,19 @@ export const teams: Team[] = [
   {
     title: 'REJECT',
     path: 'REJECT'
-  }
+  },
   // {
   //   title: 'Sengoku Gaming',
   //   path: 'SG'
   // }
+  {
+    title: '父の背中',
+    path: 'FB'
+  },
+  {
+    title: 'NORTHEPTION',
+    path: 'NT'
+  }
 ]
 
 export const getTeamByPath = (path: string): Team | undefined => {
