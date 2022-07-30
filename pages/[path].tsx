@@ -1,18 +1,43 @@
-import type { NextPage } from 'next'
+import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 import { TopContent } from '~/content/Top'
-import { getTeamByPath } from '~/data/team'
+import { getTeamByPath, Team, teams } from '~/data/team'
 
-const DetailPage: NextPage = () => {
-  const router = useRouter()
-  const path = router.query.path as string
+interface Props {
+  team: Team
+}
+
+export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
+  const path = params?.path as string
   const team = getTeamByPath(path)
-
   if (team === undefined) {
-    return <></>
+    throw new Error('team is not found.')
   }
+
+  return {
+    props: {
+      team
+    }
+  }
+}
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths: { params: any }[] = []
+
+  teams.map(({ path }) => {
+    paths.push({ params: { path } })
+  })
+
+  return {
+    paths,
+    fallback: false
+  }
+}
+
+const DetailPage: NextPage<Props> = (props) => {
+  const { team } = props
 
   return (
     <>
