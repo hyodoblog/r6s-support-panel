@@ -1,6 +1,7 @@
 import 'ress'
 import '~/styles/globals.scss'
 import '~/styles/custom.scss'
+import '~/styles/panel.scss'
 
 import type { EmotionCache } from '@emotion/cache'
 import { CacheProvider } from '@emotion/react'

@@ -8,7 +8,7 @@ export const Text: React.FC<Props> = (props) => {
   const { title } = props
 
   return (
-    <Box className="electronic-board" display="flex">
+    <Box className="electronic-board" display="flex" sx={{ whiteSpace: 'nowrap' }}>
       {title}
       <Box sx={{ px: 4 }} />
       がんばれ〜〜〜〜〜

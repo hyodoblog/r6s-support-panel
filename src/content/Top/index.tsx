@@ -5,10 +5,8 @@ import { teams } from '~/data/team'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.secondary.main,
-  ...theme.typography.body2,
   padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary
+  textAlign: 'center'
 }))
 
 export const TopContent: React.FC = () => {
