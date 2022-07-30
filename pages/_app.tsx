@@ -9,8 +9,8 @@ import CssBaseline from "@mui/material/CssBaseline";
 import type { AppProps } from "next/app";
 
 import { createEmotionCache } from "~/cache";
-import { theme } from "~/theme";
 import { DefaultLayout } from "~/layouts/Default";
+import { theme } from "~/theme";
 
 const clientSideEmotionCache = createEmotionCache();
 
