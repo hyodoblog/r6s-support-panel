@@ -1,5 +1,4 @@
 import { Box, Card, Typography } from '@mui/material'
-import Image from 'next/image'
 
 interface Props {
   title: string
@@ -13,10 +12,10 @@ export const R6SCard: React.FC<Props> = (props) => {
 
   return (
     <Card sx={{ display: 'flex', alignItems: 'center' }}>
-      <Image src={imgPath} width={150} height={150} />
+      <img src={imgPath} width={120} height={120} />
 
-      <Box sx={{ pr: 4 }}>
-        <Typography variant="h5">{title}</Typography>
+      <Box sx={{ p: 4 }}>
+        <Typography variant="h6">{title}</Typography>
       </Box>
     </Card>
   )
