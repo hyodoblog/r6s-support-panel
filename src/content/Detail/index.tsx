@@ -1,7 +1,7 @@
-import { Grid, Paper, styled } from '@mui/material'
+import { Grid } from '@mui/material'
 
 import { R6SCard } from '~/components/R6SCard'
-import { Team, teams } from '~/data/team'
+import type { Team } from '~/data/team'
 
 interface Props {
   team: Team

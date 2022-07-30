@@ -1,8 +1,7 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
-import { DetailContent } from '~/content/Detail'
 
-import { TopContent } from '~/content/Top'
+import { DetailContent } from '~/content/Detail'
 import type { Team } from '~/data/team'
 import { getTeamByPath, teams } from '~/data/team'
 
