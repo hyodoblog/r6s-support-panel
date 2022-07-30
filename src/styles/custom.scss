@@ -1,0 +1,39 @@
+.bg {
+  &-card {
+    background-color: "#1ce1ce" !important;
+  }
+}
+
+.text,
+.border {
+  &-black-100 {
+    color: '#000' !important;
+  }
+
+  &-white {
+    &-100 {
+      color: '#fff' !important;
+    }
+    &-54 {
+      color: rgba(256, 256, 256, 0.54) !important;
+    }
+    &-32 {
+      color: rgba(256, 256, 256, 0.32) !important;
+    }
+  }
+
+  &-wrap {
+    &-1 {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+    }
+    &-2 {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+  }
+}
