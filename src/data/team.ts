@@ -49,3 +49,7 @@ export const teams: Team[] = [
 export const getTeamByPath = (path: string): Team | undefined => {
   return teams.filter((team) => team.path === path)[0]
 }
+
+export const getImgPathByPath = (path: string): string => {
+  return `/logo/${path}.png`
+}

@@ -1,6 +1,8 @@
 import { Box, Card, Typography } from '@mui/material'
 import Link from 'next/link'
 
+import { getImgPathByPath } from '~/data/team'
+
 interface Props {
   title: string
   path: string
@@ -10,7 +12,7 @@ export const R6SCard: React.FC<Props> = (props) => {
   const { path, title } = props
 
   const href = `/${path}`
-  const imgPath = `/logo/${path}.png`
+  const imgPath = getImgPathByPath(path)
 
   return (
     <Link href={href} style={{ cursor: 'pointer' }}>
