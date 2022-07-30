@@ -10,6 +10,7 @@ import type { AppProps } from "next/app";
 
 import { createEmotionCache } from "~/cache";
 import { theme } from "~/theme";
+import { DefaultLayout } from "~/layouts/Default";
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -28,7 +29,9 @@ export default function MyApp({
       <ThemeProvider theme={theme}>
         <CssBaseline />
 
-        <Component {...pageProps} key={router.asPath} />
+        <DefaultLayout>
+          <Component {...pageProps} key={router.asPath} />
+        </DefaultLayout>
       </ThemeProvider>
     </CacheProvider>
   );
