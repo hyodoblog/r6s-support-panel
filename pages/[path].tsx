@@ -1,9 +1,9 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
-import { useRouter } from 'next/router'
 
 import { TopContent } from '~/content/Top'
-import { getTeamByPath, Team, teams } from '~/data/team'
+import type { Team} from '~/data/team';
+import { getTeamByPath, teams } from '~/data/team'
 
 interface Props {
   team: Team
