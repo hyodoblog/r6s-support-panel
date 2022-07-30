@@ -1,4 +1,5 @@
 import { Box, Card, Typography } from '@mui/material'
+import Link from 'next/link'
 
 interface Props {
   title: string
@@ -8,15 +9,18 @@ interface Props {
 export const R6SCard: React.FC<Props> = (props) => {
   const { path, title } = props
 
+  const href = `/${path}`
   const imgPath = `/logo/${path}.png`
 
   return (
-    <Card sx={{ display: 'flex', alignItems: 'center' }}>
-      <img src={imgPath} width={120} height={120} />
+    <Link href={href} className="cursor-pointer">
+      <Card sx={{ display: 'flex', alignItems: 'center' }}>
+        <img src={imgPath} width={120} height={120} />
 
-      <Box sx={{ p: 4 }}>
-        <Typography variant="h6">{title}</Typography>
-      </Box>
-    </Card>
+        <Box sx={{ p: 4 }}>
+          <Typography variant="h6">{title}</Typography>
+        </Box>
+      </Card>
+    </Link>
   )
 }

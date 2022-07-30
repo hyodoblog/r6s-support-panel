@@ -21,6 +21,12 @@ img {
   }
 }
 
+.cursor {
+  &-pointer {
+    cursor: pointer;
+  }
+}
+
 [type="text"],
 [type="email"],
 [type="url"],
