@@ -1,8 +1,9 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
+import { DetailContent } from '~/content/Detail'
 
 import { TopContent } from '~/content/Top'
-import type { Team} from '~/data/team';
+import type { Team } from '~/data/team'
 import { getTeamByPath, teams } from '~/data/team'
 
 interface Props {
@@ -45,7 +46,7 @@ const DetailPage: NextPage<Props> = (props) => {
         <title>{team.title}</title>
       </Head>
 
-      <TopContent />
+      <DetailContent team={team} />
     </>
   )
 }
