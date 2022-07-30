@@ -9,7 +9,7 @@ export const teams: Team[] = [
     path: 'CGL'
   },
   {
-    title: 'CYCLOPS athlete gaming OSAKA',
+    title: 'CAG',
     path: 'CAG'
   },
   {
