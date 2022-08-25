@@ -32,14 +32,14 @@ export const teams: Team[] = [
     title: 'FNATIC',
     path: 'FNATIC'
   },
-  // {
-  //   title: 'PSG Esports',
-  //   path: 'PSG'
-  // },
-  // {
-  //   title: 'Sengoku Gaming',
-  //   path: 'SG'
-  // }
+  {
+    title: 'PSG Esports',
+    path: 'PSG'
+  },
+  {
+    title: 'Sengoku Gaming',
+    path: 'SG'
+  },
   {
     title: '父の背中',
     path: 'FB'
