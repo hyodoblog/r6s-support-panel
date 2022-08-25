@@ -37,7 +37,7 @@ export const teams: Team[] = [
     path: 'PSG'
   },
   {
-    title: 'Sengoku Gaming',
+    title: 'SG',
     path: 'SG'
   },
   {
